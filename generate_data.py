@@ -102,7 +102,3 @@ if __name__ == "__main__":
     new = new.drop(columns=["delivery_hours"])
     new.to_csv("data/new_shipments.csv", index=False)
     print(len(hubs), len(raw), len(new))
-
-hubs_df = pd.read_csv("/content/data/hubs.csv")
-new_ship_df = pd.read_csv("/content/data/new_shipments.csv")
-raw_ship_df = pd.read_csv("/content/data/raw_shipments.csv")
